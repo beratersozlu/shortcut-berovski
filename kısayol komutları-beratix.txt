@@ -1,0 +1,86 @@
+kısayol komutları ;
+** shutdown.exe /r /fw çalıştır > otomatik bios giriş
+shutdown /s /f /t 0 > win11 bilgisayarı tam kapat komutu
+mrt > windows antivirüs manuel temizleme
+
+1-compmgmt.msc > bilgisayar yönetimi
+*-devmgmt.msc > device yönetimi
+*-cleanmgr > disk temizleme
+*-route print > ethernet settings - mac
+2-sysdm.cpl > bilgisayar gelişmiş ayarlar > kullanıcı profili silme
+3-msinfo > sistem bilgisi öğrenme
+4-eventvwr.msc > windows olay günlükleri
+5-askschd.msc > görev zamanlayıcı
+6-gpedit.msc > yerel grup ilkesi düzenleyicisi
+*rsop.msc
+7-sysprep > bilgisayarın sidıd sıfırlama (kullanıcı)
+8-msedge.exe > edge açar
+9-systeminfo > anakart özelliklerini gösteriyor / windowsun kurulduğu tarih
+10-tsdiscon > bilgisayarı kilitler
+11-wmic bios get serialnumber > bilgisayar seri no öğrenme  CMD
+12-net localgroup administrators MERCANLAR\SELCUKOVA /add > kullanıcıyı local admin yapma
+13-netsh wlan show profiles "wifiismi" key=clear
+14-mobsync.exe > windows eşitleme merkezini açıyor/kapatıyor
+15-ncpa.cpl > ağ bağlantılarını açma
+16-desk.cpl > görüntü ayarlarını açma
+17-main.cpl > fare ayarlarını açma
+18-appwiz.cpl > program ekle kaldır
+19-firewall.cpl > firewall settings
+20-control.exe keymgr.dll > windows credential manager açar
+21-timedate.cpl > tarih ve saat değiştirme
+22-intl.cpl > direkt tarih ayarı değiştirme
+23-inetcpl.cpl > internet özellikleri
+24-mmsys.cpl > ses özellikleri
+25-diskmgmt.msc > disk yönetimi
+26-eudcedit.exe > özel karakter oluşturma
+27-charmap.exe > özel karakter oluşturma 2
+28-tracert www.google.com > hangi routerlardan veri geçiyor
+29-taskkill /im xxxx.exe /f > zorla uygulamayı kapatır
+30-utilman > erişebilirlik merkezi > mouse pointer ayarı
+31-cd c:/ > dizin değiştirme
+32-type null xxx.txt,png > dosya oluşturma
+33-del dosyası.uzantı > dosya silme
+34-mkdir dosyaadı > klasör oluşturma
+35-rmdir dosyaadı > klasör silme
+36-del "BERAT ERSOZLU" > boşluk var ise " işareti koyulur
+37-winsat disk -drive c > yönetici olarak çalıştır. DİSK OKUMA YAZMA HIZI
+38-Invoke-RestMethod -Uri ('https://ipinfo.io/') > IP BILGILERI VE KOORDINAT POWERSHELL
+39-winget update / winget upgrade --all
+40-winsat formal > pc parçalarının özelliklerini gösteriyor > c>windows>performance>winsat>datastore>sontarih>winspr;
+41-powercfg /batteryreport > çıkan uzantıyı tarayıcıya yapıştır.
+42-powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61 cmd>admin
+43-\ipadresi\c$ >> compmgmt.msc admin grubuna kullanıcı belirlenmesi gerek.
+44-secpol.msc >> local security policy 
+45-net accounts >> local admin parolasının kilidi ne zaman kalkacağı süresini belirtir.
+
+__________________________________________________________________________
+önbellek temizleme;
+%temp%
+prefetch
+wsreset.exe > store önbelleği temizliyor
+__________________________________________________________________________
+klavye kısayol;
+ctrl + shfit + delete > chrome çerez cache temizleme
+ctrl + shift  + windows + b > ekran kartı resetler
+windows + shift + s > ekran alıntısı
+windows + v > kopyalama geçmişi
+ctrl + shift + esc > görev yöneticisi
+alt + enter > dosya özellikleri
+ctrl + shift + windows + b > görüntü kartını yeniler.
+ctrl + windows + sağ sol yön ok tuşu
+ctrl + windows + D > YENİ MASAÜSTÜ OLUŞTURUYOR
+ctrl + windows + sağ yön ok tuşu > geçiş yapıyor
+sol alt + sol shift + print screen > yüksek karşıt renkleri açar high contrast
+netplwiz > önemli
+__________________________________________________________________________
+:hop
+start
+goto hop
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+chkdsk /f /r > disk kontrol komutu
+sfc /scannow > sistem onarma
+DISM /Online /Cleanup-Image /RestoreHealth  > windows imaj onarma
+rstrui > sistem geri yükleme komutu
